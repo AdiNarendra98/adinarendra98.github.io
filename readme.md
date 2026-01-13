@@ -1,4 +1,4 @@
 ## adinarendra98.github.io
-To be updated soon 💤
+To be updated 💤
 
 
