@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>UQ for Cervical Cytology</title>
+  <title>Reliable Few-Shot PathFMs via Conformal Prediction</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,28 +52,30 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Uncertainty Quantification in DL Models for Cervical Cytology</h1>
+            <h1 class="title is-1 publication-title">Towards Reliable Few-Shot Adaptation of Pathology Foundation Models via Conformal Prediction</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Shubham Ojha</a><sup>1</sup> & </span>
+                <a href="https://adinarendra98.github.io" target="_blank">Aditya Narendra</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Aditya Narendra</a><sup>2</sup></span>
+                  <a href="https://www.linkedin.com/in/s-panda/" target="_blank">Subhankar Panda</a><sup>1,2</sup> &</span>
+                  <span class="author-block">
+                  <a href="https://chandreshiit.github.io/author/chandresh-kumar-maurya/" target="_blank">Chandresh Kumar Maurya</a><sup>1</sup></span>
                   <span class="author-block">
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1 </sup>IHub-Data, International Institute of Information Technology, Hyderabad,</span>
-                    <span class="author-block"><sup>2 </sup>Independent Contributor</span>
-                    <br /><a href="https://2024.midl.io" target="_blank">MIDL 2024</a>
+                    <span class="author-block"><sup>1 </sup>Department of Computer Science and Engineering, IIT Indore, India</span>
+                    <span class="author-block"><sup>2 </sup>Odisha University of Technology and Research, India</span>
+                    <br /><a href="https://sites.google.com/view/aimedhealth-aaai/home?authuser=0" target="_blank"> AAAI 2026 (AIMedHealth Bridge Program)</a>
                   </div>
 
                   <div class="column has-text-centered">
-                    <div class="publication-links">
+                    <div class="publication-links" style="display: inline-block; margin-left: -1rem;">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://openreview.net/pdf?id=hrTiw1X7yq" target="_blank"
+                        <a href="https://adinarendra98.github.io/papers/AAAI_26CR.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -85,7 +87,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/shubhamOjha1000/UQ-in-DL-Models-for-Cervical-Cytology" target="_blank"
+                    <a href="https://github.com/AdiNarendra98/Few-Shot-PathCP" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -96,7 +98,7 @@
 
               <!-- Poster Link -->
               <span class="link-block">
-                <a href="https://drive.google.com/file/d/15hueodeasdU1sfBV5O9fXqjhL-0_jboa/view?usp=sharing" target="_blank"
+                <a href="https://drive.google.com/file/d/153M17E6wFVm2rcmGTf92kX8o1B9wUO3-/view?usp=sharing" target="_blank"
                 class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
                   <i class=" fa fa-image"></i>
@@ -105,17 +107,16 @@
               </a>
             </span>
 
-             <!-- Slides Link -->
-             <span class="link-block">
-              <a href="https://drive.google.com/file/d/1Dm7DsBPdViusHeYJA6NBVS0979ypsvR2/view?usp=sharing" target="_blank"
-              class="external-link button is-normal is-rounded is-dark">
-              <span class="icon">
-                <i class=" fa fa-link"></i>
-              </span>
-              <span>Slides</span>
-            </a>
-          </span>
-
+              <!-- Poster Link -->
+              <span class="link-block">
+                <a href="https://adinarendra98.github.io/projects/AAAI26/" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class=" fa fa-link"></i>
+                </span>
+                <span>Slides</span>
+              </a>
+            </span>
 
             </div>
           </div>
@@ -133,15 +134,11 @@
         <h2 class="title is-3">TL;DR</h2>
         <img src="./static/images/Fig1.png"> 
         <div class="content has-text-justified">
-          <br> <p>We aim to investigate the correlation between a model’s predictive capability and its uncertainty estimates for cervical cytology classification through two research questions:</p>
-          <ul>
-              <li>
-                  How effective is uncertainty quantification for enhancing the model’s predictive capacity in high-confidence intervals?
-              </li>
-              <li>
-                  Are low confidence intervals an indicator of incorrect predictions?
-              </li>
-          </ul>
+          <br> <p>
+             <li>We integrate Conformal Prediction (CP) methods with few-shot adaption of pathology foundation models to provide well-calibrated uncertainty estimates, improving reliability and diagnostic efficiency.</li>
+             <li>We introduce four novel, clinically aligned evaluation metrics designed to assess the real-world effectiveness of CP approaches in few-shot diagnostic settings </li>
+          
+          </p>
         </div>
       </div>
     </div>
@@ -158,7 +155,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Deep Learning (DL) has demonstrated significant promise in digital pathological applications both histopathology and cytopathology. However, the majority of these works primarily concentrate on evaluating the general performance of the models and overlook the crucial requirement for uncertainty quantification which is necessary for real-world clinical application. In this study, we examine the change in predictive performance and the identification of mispredictions through the incorporation of uncertainty estimates for DL-based Cervical cancer classification. Specifically, we evaluate the efficacy of three methods—Monte Carlo(MC) Dropout, Ensemble Method, and Test Time Augmentation(TTA) using three metrics: variance, entropy, and sample mean uncertainty. The results demonstrate that integrating uncertainty estimates improves the model’s predictive capacity in high-confidence regions, while also serving as an indicator for the model’s mispredictions in low-confidence regions.
+            Recent advances in foundation models have enabled their integration into high-stakes clinical settings, particularly in computational pathology, where domain-specialized FMs demonstrate strong generalization. However, real-world deployment is constrained by their poorly calibrated uncertainty awareness and degraded performance in low-data regimes requiring few-shot adaptation strategies, leading to unreliable and inefficient diagnostic workflows. Conformal Prediction (CP) is an uncertainty quantification framework that offers distribution‑free, finite‑sample coverage guarantees for ensuring safer deployment in such settings. In this work, we explore the integration of various CP methods with pathology foundation models using three few-shot adaption strategies for classification tasks across two datasets. To assess the clinical effectiveness of these approaches, we propose four novel metrics aimed at improving clinical reliability and alleviating diagnostic workload in few-shot settings. Our results demonstrate that Conformal Prediction methods enhance the reliability of pathology foundation models and offer actionable uncertainty estimates to enable safe and efficient deployment in few-shot pathological classification workflows, with the LAC method achieving the best overall performance.
           </p>
         </div>
       </div>
@@ -173,10 +170,27 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Methodology</h2> 
-        <img src="./static/images/Fig2.png" style="max-width: 60%; height: auto;"> 
         <div class="content has-text-justified">
          <br> <p>
-          We conduct a comparative analysis of a model’s predictive performance with and without uncertainty quantification in high-confidence intervals. Specifically, we analyse the model’s predictive performance and quantify the number of samples associated with incorrect predictions in regions of low confidence. The dataset utilized in this study is derived from the cervical cell classification collection found within the CRIC Searchable Image Database and use ResNet50 for classifying cervical cells into Normal and Abnormal categories while also estimating associated uncertainty values. We then assessed performance using AUC and Misprediction rate (100 - Accuracy)% .
+        We integrate Conformal Prediction (CP) with few-shot adaptation of pathology foundation models (UNI, Phikon, and Hibou-B) to produce uncertainty-calibrated predictions in data-scarce clinical settings. Using three few-shot strategies: Baseline, Baseline++, and Prototypical Networks-support samples are encoded with frozen PFMs, while a separate calibration set is used to compute CP based nonconformity scores for LAC, APS, and RAPS  methods. These scores generate prediction sets for query samples, providing actionable uncertainty estimates that account for diagnostic ambiguity and enable reliable few-shot classification without full model fine-tuning.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End TLDR/Contributions -->
+
+<!-- TLDR/Contributions -->
+<section class="section is-grey">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Evaluation</h2> 
+        <img src="./static/images/Fig2.png" style="max-width: 80%; height: auto;"> 
+        <div class="content has-text-justified">
+         <br> <p>
+       We evaluate the integrated CP and few-shot pathology foundation model framework across two datasets: HiCervix (cervical cells) and HMU-GC-HE-30K (gastric tissue) using 1, 5 and 10-shot settings. The models are evaluated with both standard CP metrics such as empirical coverage and average set size, and four novel clinically aligned metrics designed to reflect real-world utility: Mean Rank of True Label (MRTL), Rank to Correct (RTC), Rank 1 Containment Rate (R1CR), and Effective Singleton Rate (ESR). This evaluation strategy quantifies not only the reliability and calibration of prediction sets but also their impact on clinical workflow efficiency and diagnostic workload in few-shot pathological classification.
           </p>
         </div>
       </div>
@@ -187,15 +201,34 @@
 
 
 <!-- TLDR/Contributions -->
-<section class="section is-grey">
+<section class="section is-grey" style="background-color: #f0f0f0;">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Results</h2> 
-        <img src="./static/images/Fig3.png"> 
+       <img src="./static/images/Fig3A.png" style="margin-bottom: 1rem;"> 
+        <img src="./static/images/Fig3B.png" style="margin-bottom: 1rem;"> 
         <div class="content has-text-justified">
-         <br> <p>
-          Table 2 shows a 7-12% improvement in AUC across all methods in high-confidence intervals compared to the baseline AUC of 86.3 ± 2.24%. Figure 1 highlights more correct than incorrect predictions in low-uncertainty ranges, indicating that uncertainty estimates enhance predictive performance in high-confidence areas. Table 3 reveals a 10.1-19.07% increase in misprediction rates as thresholds for low-confidence intervals rise, while Figure 1 links higher uncertainty ranges to more mispredictions for MC Dropout (except Entropy). This suggests low-confidence intervals often indicate incorrect predictions.
+         <p style="margin-bottom: 1rem;">
+          Tables 1 and 2 on the HiCervix dataset show that LAC consistently produced the most well-calibrated and clinically efficient prediction sets across all few-shot methods and CP frameworks, followed by APS. LAC reduced the Mean Rank of True Label (MRTL) by up to 35% and Rank to Correct (RTC) by 50%, streamlining diagnostic workflows. ProtoNets achieved the most consistent label ranking, with up to 64% higher Rank 1 Containment Rate (R1CR) while maintaining strong ESR, with the best results obtained using LAC + ProtoNets + Phikon.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+    <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <img src="./static/images/Fig3C.png" style="margin-bottom: 1rem;"> 
+        <img src="./static/images/Fig3D.png" style="margin-bottom: 1rem;"> 
+        <div class="content has-text-justified">
+        <p>
+          Tables 3 and 4 on the HMU-GC-HE-30K dataset show that LAC consistently produced the most well-calibrated and clinically efficient prediction sets across all few-shot methods and CP frameworks, followed by APS. LAC reduced the Mean Rank of True Label (MRTL) by 15–30% and Rank to Correct (RTC) by 25–45% compared to APS, streamlining diagnostic workflows. Among few-shot strategies, Baseline achieved the most consistent label ranking and calibration, with up to 25% higher Rank 1 Containment Rate (R1CR) and up to 250% higher Effective Singleton Rate (ESR) than Baseline++ and ProtoNets. The best-performing configuration combined LAC + Baseline + Hibou-B, highlighting its potential to reduce clinical workload and improve patient outcomes.
+          </p>
+          <p>
+          Overall across both the datasets, LAC consistently produced the most well-calibrated and clinically efficient prediction sets, followed by APS. Few-shot adaptation strategies showed varying strengths: ProtoNets excelled in true label ranking on HiCervix, while Baseline achieved the most robust calibration and highest singleton predictions on HMU-GC-HE-30K. Overall, combining LAC with the optimal few-shot method and foundation model for each dataset (ProtoNets + Phikon for HiCervix, Baseline + Hibou-B for HMU-GC-HE-30K) delivered the most reliable and clinically actionable predictions.
           </p>
         </div>
       </div>
@@ -210,17 +243,14 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@inproceedings{ojhauncertainty,
-      title={Uncertainty Quantification in DL Models for Cervical Cytology},
-      author={Ojha, Shubham and Narendra, Aditya},
-      booktitle={Medical Imaging with Deep Learning}
-    }</code></pre>
+    <pre><code>@inproceedings{To appear at PMLR soon..}
+    </code></pre>
   </div>
 </section>
 <!--End BibTex citation -->
 
 
-<footer class="footer">
+<footer class="footer" style="background-color: #f0f0f0;">
 <div class="container">
   <div class="columns is-centered">
     <div class="column is-8">
